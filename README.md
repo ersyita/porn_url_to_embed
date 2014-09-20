@@ -2,6 +2,7 @@ Support URL's
 =======
 
 * xvideos.com
+* xhamster.com
 * redtube.com
 * pornhub.com
 * youporn.com
