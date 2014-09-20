@@ -11,7 +11,7 @@ Support URL's
 * youjizz.com
 * drtuber.com
 * slutload.com
-
+* xhamster.com
 
 ```php
 
@@ -21,7 +21,7 @@ require_once "Porn_URL.php";
 
 $url = 'http://www.xvideos.com/video1902728/kelly_and_lorena';
 
-var_dump($url, Porn_URL::getEmbedURL($url));
+var_dump($url, Porn_URL::getEmbed($url));
 
 //RETURN
 //string 'http://www.xvideos.com/video1902728/kelly_and_loren' (length=51)
