@@ -31,6 +31,9 @@ class Porn_URL
     
     const URL_SLUTLOAD = 'slutload.com';
     const EMBED_SLUTLOAD = 'http://www.slutload.com/embed_player/';
+
+    const URL_XHMASTER = 'xhamster.com';
+    const EMBED_XHMASTER = 'http://xhamster.com/xembed.php?video=';
     
     public static function getBaseUrls()
     {
@@ -121,5 +124,11 @@ class Porn_URL
     {
         $id = end(array_filter(explode('/', $url)));
         return $id ? self::EMBED_SLUTLOAD . $id : false;
+    }
+
+    protected static function getEmbed_XHMASTER($url)
+    {
+        preg_match('/movies\/[0-9]\w+/', $url, $matches);
+        return $matches ? self::EMBED_XHMASTER . str_replace('movies/', '', $matches[0]) : false;
     }
 }
